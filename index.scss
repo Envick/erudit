@@ -43,7 +43,7 @@ $main-color: #fff;
 section.aside {
   width: 25%;
   @media (max-width: 840px) {
-    min-width: 150px;
+    min-width: 120px;
   }
   aside {
     width: 100%;
@@ -62,6 +62,9 @@ section.aside {
       height: 200px;
       border-radius: 100%;
       margin-bottom: 30px;
+      @media (max-width: 576px) {
+        height: 150px;
+      }
     }
     .logo img {
       width: 200px;
@@ -70,6 +73,10 @@ section.aside {
       @media (max-width: 840px) {
         width: 150px;
         height: 150px;
+      }
+      @media (max-width: 576px) {
+        width: 120px;
+        height: 120px;
       }
     }
     ul {
@@ -86,7 +93,9 @@ section.aside {
       width: 100%;
       height: 70px;
       text-align: center;
-
+      @media (max-width: 576px) {
+        height: 55px;
+      }
       a {
         width: 100%;
         height: 100%;
@@ -104,7 +113,7 @@ section.aside {
         }
         @media (max-width: 576px) {
           padding: 0;
-          font-size: 14px;
+          font-size: 12px;
         }
       }
     }
@@ -120,6 +129,12 @@ section.main-content {
     flex-direction: column;
     nav {
       height: 80px;
+      @media (max-width: 576px) {
+        height: 60px;
+      }
+      @media (max-width: 350px) {
+        height: 40px;
+      }
       ul {
         height: 100%;
         list-style: none;
@@ -134,7 +149,10 @@ section.main-content {
             font-size: 12px;
           }
           @media (max-width: 576px) {
-            font-size: 10px;
+            font-size: 8px;
+          }
+          @media (max-width: 350px) {
+            font-size: 7px;
           }
           text-decoration: none;
           font-size: 22px;
@@ -187,7 +205,7 @@ section.main-content {
         line-height: 30px;
         color: #000;
         @media (max-width: 576px) {
-          font-size: 16px;
+          font-size: 14px;
         }
       }
       p {
@@ -196,7 +214,8 @@ section.main-content {
         text-align: center;
         color: #000;
         @media (max-width: 576px) {
-          font-size: 14px;
+          font-size: 10px;
+          line-height: 20px;
         }
       }
       @media (max-width: 840px) {
@@ -222,6 +241,12 @@ section.other-content {
     background-size: cover;
     nav {
       height: 80px;
+      @media (max-width: 576px) {
+        height: 60px;
+      }
+      @media (max-width: 350px) {
+        height: 40px;
+      }
       ul {
         height: 100%;
         list-style: none;
@@ -229,16 +254,34 @@ section.other-content {
         justify-content: space-around;
         align-items: center;
         a {
+          @media (max-width: 800px) {
+            font-size: 16px;
+          }
+          @media (max-width: 650px) {
+            font-size: 12px;
+          }
+          @media (max-width: 576px) {
+            font-size: 8px;
+          }
+          @media (max-width: 350px) {
+            font-size: 7px;
+          }
           text-decoration: none;
           font-size: 22px;
           font-family: "intro";
         }
       }
     }
-    .teacher-text {
+    h2 {
       font-size: 40px;
       padding: 50px;
       text-align: center;
+      @media (max-width: 576px) {
+        font-size: 25px;
+        padding: 20px;
+      }
+      @media (max-width: 576px) {
+      }
     }
     .teachers {
       display: flex;
@@ -257,6 +300,10 @@ section.other-content {
           color: #000;
           font-size: 20px;
           padding: 5px 0;
+          @media (max-width: 576px) {
+            font-size: 8px;
+            padding: 3px 0;
+          }
         }
       }
     }
@@ -265,7 +312,7 @@ section.other-content {
       justify-content: space-between;
       flex-wrap: wrap;
       width: 100%;
-      height: 500px;
+      padding: 0 10px;
       .advantage {
         width: 26%;
         height: 200px;
@@ -273,13 +320,45 @@ section.other-content {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 30px;
+        @media (max-width: 840px) {
+          width: 45%;
+          margin-bottom: 10px;
+        }
+        @media (max-width: 576px) {
+          width: 45%;
+          height: 150px;
+          margin-bottom: 10px;
+        }
+        @media (max-width: 400px) {
+          width: 45%;
+          height: 120px;
+          margin-bottom: 10px;
+        }
         img {
           width: 80%;
           height: 150px;
+          @media (max-width: 576px) {
+            width: 70%;
+            height: 120px;
+          }
+          @media (max-width: 400px) {
+            width: 70%;
+            height: 90px;
+          }
         }
         span {
           color: #444443;
           font-size: 22px;
+          text-align: center;
+          @media (max-width: 840px) {
+            font-size: 20px;
+            padding: 3px 3px;
+          }
+          @media (max-width: 576px) {
+            font-size: 11px;
+            padding: 3px 3px;
+          }
         }
       }
     }
@@ -290,17 +369,27 @@ section.other-content {
       margin: 0 auto;
       width: 85%;
       height: auto;
+      @media (max-width: 576px) {
+        padding: 5px;
+      }
       p {
         font-size: 17px;
         line-height: 30px;
         text-align: center;
         color: #000;
         margin-bottom: 10px;
+        @media (max-width: 576px) {
+          font-size: 10px;
+          line-height: 15px;
+        }
       }
       ul {
         padding-left: 20px;
         text-align: center;
         li {
+          @media (max-width: 576px) {
+            font-size: 10px;
+          }
           font-size: 17px;
           color: #000;
         }
@@ -312,6 +401,11 @@ section.other-content {
         border-radius: 20px;
         overflow: hidden;
         margin-bottom: 20px;
+        @media (max-width: 576px) {
+          width: 100%;
+          margin: 0 0 20px 0;
+          height: 150px;
+        }
       }
       &__slider {
         width: 400%;
@@ -348,12 +442,20 @@ section.other-content {
       flex-direction: column;
       justify-content: space-between;
       height: 500px;
+      @media (max-width: 576px) {
+        width: 100%;
+        padding: 0 5px;
+        justify-content: flex-start;
+      }
       &__contacts {
         display: flex;
         justify-content: space-between;
         width: 100%;
         span {
           padding: 7px 0;
+        }
+        @media (max-width: 576px) {
+          margin-bottom: 10px;
         }
       }
       &__school {
@@ -363,6 +465,9 @@ section.other-content {
         align-items: center;
         display: flex;
         flex-direction: column;
+        @media (max-width: 576px) {
+          font-size: 12px;
+        }
       }
       &__kindergar {
         line-height: 100%;
@@ -371,6 +476,9 @@ section.other-content {
         font-size: 32px;
         align-items: center;
         flex-direction: column;
+        @media (max-width: 576px) {
+          font-size: 12px;
+        }
       }
       &__map {
         width: 100%;
@@ -387,12 +495,20 @@ section.other-content {
       border-radius: 20px;
       margin: 0 auto;
       width: 85%;
-      height: 500px;
+      height: auto;
+      @media (max-width: 576px) {
+        padding: 5px;
+        height: auto;
+      }
       p {
         font-size: 17px;
         line-height: 30px;
         text-align: center;
         color: #000;
+        @media (max-width: 576px) {
+          font-size: 10px;
+          line-height: 15px;
+        }
       }
     }
     .conditions {
