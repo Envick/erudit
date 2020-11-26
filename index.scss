@@ -42,6 +42,7 @@ $main-color: #fff;
 }
 section.aside {
   width: 25%;
+  min-width: 25%;
   @media (max-width: 840px) {
     min-width: 120px;
   }
@@ -121,8 +122,9 @@ section.aside {
 }
 
 section.main-content {
-  background: url(images/bg.jpg) no-repeat 50% 50%;
-  background-size: cover;
+  // background: url(images/bg.jpg) no-repeat 50% 50%;
+  // background-size: cover;
+  background-color: rgb(33, 208, 252);
   width: 75%;
   .main-page {
     display: flex;
@@ -233,12 +235,15 @@ section.main-content {
 //teachers
 section.other-content {
   width: 75%;
+  min-width: 75%;
   .other-page {
     min-height: 100%;
     display: flex;
     flex-direction: column;
-    background: url(images/bg.jpg) no-repeat 50% 50%;
-    background-size: cover;
+    // background: url(images/bg.jpg) no-repeat 50% 50%;
+    // background-size: cover;
+    background-color: rgb(33, 208, 252);
+
     nav {
       height: 80px;
       @media (max-width: 576px) {
@@ -321,6 +326,9 @@ section.other-content {
         justify-content: space-between;
         align-items: center;
         margin-bottom: 30px;
+        padding-bottom: 10px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 23px 1px #fff;
         @media (max-width: 840px) {
           width: 45%;
           margin-bottom: 10px;
@@ -348,7 +356,7 @@ section.other-content {
           }
         }
         span {
-          color: #444443;
+          color: #fff;
           font-size: 22px;
           text-align: center;
           @media (max-width: 840px) {
@@ -668,7 +676,7 @@ section.other-content {
         padding: 0 5px;
       }
       .gallery-item {
-        width: 90%;
+        width: 70%;
         height: 500px;
         margin-bottom: 15px;
         @media (max-width: 840px) {
